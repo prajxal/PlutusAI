@@ -1,0 +1,16 @@
+# The application. No cloud SDKs.
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9      # multipart CSV upload
+pydantic>=2.6
+
+# Phase 2 -- PostgreSQL
+psycopg[binary]>=3.1
+
+# Phase 3 -- local auth
+PyJWT>=2.8
+argon2-cffi>=21.3
+
+# Tests
+pytest>=8
+httpx>=0.27                  # FastAPI TestClient

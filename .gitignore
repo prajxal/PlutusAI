@@ -6,3 +6,11 @@ cdk.out/
 dist/
 build/
 .aws-sam/
+.pytest_cache/
+.DS_Store
+# Written at runtime by backend/app.py
+backend/.localdata/
+backend/uploads/
+# Generated sample data
+sample_sales.csv
+tests

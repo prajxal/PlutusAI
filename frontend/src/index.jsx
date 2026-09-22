@@ -1,1 +1,12 @@
-// React entry point. Mounts <App /> and configures Amplify (see auth/CognitoConfig.js).
+// React entry point. Mounts <App />; the session lives in auth/session.js.
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import "./styles/tokens.css";
+import "./styles/app.css";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);

@@ -1,3 +1,18 @@
+> **⚠️ This document describes the original AWS architecture and is being rewritten.**
+>
+> The project no longer uses AWS. Cognito, API Gateway, Lambda, DynamoDB, S3,
+> Bedrock, EventBridge and Step Functions have been replaced by a single
+> FastAPI application, PostgreSQL, local filesystem uploads, and a
+> deterministic intent classifier (with a fine-tuned model planned).
+>
+> **Sections 2, 2a, 4, 8 and 10 below are out of date.** What is accurate:
+> Section 1 (user flow), Section 3's module *contracts*, Section 7 (demo
+> script) and Section 9 (definition of done, minus "deployed to AWS").
+>
+> For the architecture as built, read [`../backend/README.md`](../backend/README.md).
+
+---
+
 # Business Dashboard + What-If Simulator — Implementation Plan
 
 **Goal:** A business owner uploads their sales/inventory/cost data, gets an auto-generated dashboard tailored to their business, and can ask "what if" questions (price changes, make-vs-buy decisions, etc.) to see a visual, plain-English projection of the impact — all deployed live on AWS with a shareable URL.

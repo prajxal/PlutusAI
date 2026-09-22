@@ -1,0 +1,51 @@
+/* PlutusAI design tokens.
+   Two rules govern this system:
+   1. Hue means one thing only -- actual (ink) vs projected (pencil).
+      Trend direction is carried by form, never by red/green.
+   2. Archivo sets every number (computed in code); Source Serif 4 sets
+      every sentence (written in language). See Foundation Rule 4. */
+
+:root {
+  color-scheme: light;
+
+  /* Ground, lightest on the right: index -> data -> conversation */
+  --band: #e4eadf;      /* green-bar stripe; used for row tracking only */
+  --paper: #f4f6f1;     /* the data sheet */
+  --reading: #fcfdfb;   /* the conversation column */
+
+  --ink: #16251c;       /* text, and every value that actually happened */
+  --ink-soft: #4e5e54;  /* captions, axis ticks, field labels */
+  --rule: #cbd6c4;
+
+  --pencil: #2e34a0;    /* projected values ONLY -- never decoration */
+  --pencil-wash: rgba(46, 52, 160, 0.1);
+  --pencil-edge: rgba(46, 52, 160, 0.32);
+
+  --sans: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Georgia,
+    "Times New Roman", serif;
+
+  /* Major-third scale off a 16px body */
+  --t-fig-xl: 2.5rem;
+  --t-fig-lg: 1.75rem;
+  --t-head: 1.3125rem;
+  --t-body: 1.0625rem;
+  --t-ui: 0.9375rem;
+  --t-small: 0.8125rem;
+  --t-micro: 0.75rem;
+
+  --lh-serif: 1.62;
+  --lh-sans: 1.4;
+
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+
+  /* Radius is not a texture. It marks things you can touch. */
+  --r-touch: 6px;
+  --r-pill: 999px;
+}
