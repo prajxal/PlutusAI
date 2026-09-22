@@ -12,6 +12,10 @@ python3 backend/app.py                  # http://127.0.0.1:8000
 First run seeds a year of sample bakery data so the dashboard has something to
 show. `python3 -m pytest tests` runs the suite.
 
+If `frontend/dist` exists it is served from this process too, so a deployment
+is one port with no CORS in play. In development it does not exist and Vite
+serves the UI instead.
+
 To use PostgreSQL instead of the single-file store:
 
 ```bash
@@ -38,6 +42,7 @@ is no migration tool to keep in step with it.
 | `services/chat/service.py` | The pipeline that joins those four together. |
 | `services/accounts.py` | Registration and sign-in. |
 | `shared/auth.py` | Tenancy, passwords and tokens. Foundation Rule 1 lives here. |
+| `services/chat/model_intent.py` | The fine-tuned classifier over HTTP, and the fallback to the rules when it is not there. |
 | `shared/store.py` | One storage interface; `postgres_store.py` and the JSON store behind it. |
 
 ## How a question is answered
@@ -52,10 +57,24 @@ what the sentence says are all code. The classifier is handed the raw message
 and no business data at all — not the products, not the figures, not an id —
 so whatever runs there cannot leak a customer's numbers.
 
-Today that classifier is `RegexIntentClassifier`: exact on the phrasings it
-knows, blind to everything else. It is the baseline a fine-tuned model has to
-beat, and it stays permanently as the fallback for when that model is
-unreachable. Every reply reports which one answered it, in `intent.source`.
+`RegexIntentClassifier` is the default: exact on the phrasings it knows, blind
+to everything else. It stays permanently as the fallback, and every reply
+reports which classifier answered it, in `intent.source`.
+
+Setting `PLUTUS_INTENT_MODEL_URL` swaps in `ModelIntentClassifier`, which calls
+the fine-tuned model over HTTP (`ml/serve.py`, or any host honouring the same
+contract). It sends the message and nothing else — no `business_id`, no
+products, no figures.
+
+That call is never trusted to succeed. Unreachable, timed out, an HTTP error,
+a body that will not parse, or a label outside the taxonomy all fall back to
+the regexes and mark the reply `rules_fallback`. A hosted classifier going down
+must cost the owner answer *quality*, never the answer itself.
+
+On a hand-written eval set the model takes macro-F1 from 0.469 to 1.000, and
+from 0.309 to 1.000 on Hinglish. See [`../ml/README.md`](../ml/README.md),
+including why a perfect score there is a statement about the eval set rather
+than about the model.
 
 ## Tenancy
 
@@ -73,7 +92,9 @@ nobody trusts is a claim nobody can accidentally start trusting.
 | `DATABASE_URL` | `postgresql:///plutusai` | Local socket as the current user |
 | `PLUTUS_JWT_SECRET` | *(generated)* | **Pin it in a deployment** — unset means every restart signs everyone out |
 | `PLUTUS_DEV_MODE` | `1` | Seeds sample data and accepts the `X-Dev-User` header. **Set to `0` in a deployment** |
-| `PLUTUS_INTENT_MODEL_URL` | *(unset)* | Points the classifier at the fine-tuned model |
+| `PLUTUS_INTENT_MODEL_URL` | *(unset)* | Points the classifier at the fine-tuned model. Unset, the regexes answer |
+| `PLUTUS_INTENT_MODEL_TOKEN` | *(unset)* | Bearer token for that endpoint, if it wants one |
+| `PLUTUS_INTENT_MODEL_TIMEOUT` | `3.0` | Seconds before giving up and using the regexes |
 | `PLUTUS_UPLOAD_DIR` | `backend/uploads` | Where raw CSVs are kept |
 | `PLUTUS_CORS_ORIGINS` | `localhost:5173,5183` | Comma-separated |
 
@@ -84,8 +105,6 @@ is worse than an absent one:
 
 - Email verification, password reset, MFA
 - Rate limiting on sign-in attempts
-- The fine-tuned intent model itself (`PLUTUS_INTENT_MODEL_URL` has nothing to
-  point at yet)
 
 ## Decisions taken here
 

@@ -14,3 +14,9 @@ backend/uploads/
 # Generated sample data
 sample_sales.csv
 tests
+.reports
+docs
+# Phase 6 -- trained checkpoints and generated data
+ml/artifacts/
+ml/data/train.jsonl
+ml/data/val.jsonl

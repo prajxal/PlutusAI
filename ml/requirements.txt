@@ -1,0 +1,6 @@
+# Phase 6 -- the intent model. Not needed to run the application.
+torch>=2.2
+transformers>=4.40
+scikit-learn>=1.3         # macro-F1 and the per-class report
+fastapi>=0.110            # ml/serve.py
+uvicorn[standard]>=0.27

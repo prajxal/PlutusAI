@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "overall": {
+      "n": 134,
+      "accuracy": 0.44029850746268656,
+      "macro_f1": 0.46904530857644966,
+      "metric_accuracy": 0.71875
+    },
+    "english": {
+      "n": 84,
+      "accuracy": 0.5119047619047619,
+      "macro_f1": 0.5490437301338303,
+      "metric_accuracy": 0.8
+    },
+    "hinglish": {
+      "n": 50,
+      "accuracy": 0.32,
+      "macro_f1": 0.30934343434343436,
+      "metric_accuracy": 0.5833333333333334
+    }
+  }
+}

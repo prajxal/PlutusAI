@@ -214,6 +214,32 @@ async def save_scenario(payload: ScenarioRequest,
                                                       payload.model_dump())}
 
 
+# --- the built frontend -------------------------------------------------------
+
+def mount_frontend() -> None:
+    """Serve frontend/dist from this process when it has been built.
+
+    A deployment is then one container and one port, with no CORS involved
+    because the UI and the API share an origin. In local development the
+    directory does not exist and Vite serves the UI instead, so this is a
+    no-op and nothing changes.
+
+    Mounted last: every /api route is already registered by now, so the
+    catch-all below cannot shadow one.
+    """
+    dist = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "frontend", "dist")
+    if not os.path.isdir(dist):
+        return
+
+    from fastapi.staticfiles import StaticFiles
+
+    # html=True makes the SPA's index.html the answer for any unknown path,
+    # which is what a client-side-routed app needs on a hard refresh.
+    app.mount("/", StaticFiles(directory=dist, html=True), name="frontend")
+    logger.info("Serving the built frontend", path=dist)
+
+
 # --- development convenience --------------------------------------------------
 
 def ensure_demo_data() -> str | None:
@@ -231,6 +257,9 @@ def ensure_demo_data() -> str | None:
     repository.put_business_meta(principal.business_id, {**meta, "business_name": "Amba Bakehouse"})
     logger.info("Seeded sample data", business_id=principal.business_id, records=result["records"])
     return principal.business_id
+
+
+mount_frontend()
 
 
 def main():

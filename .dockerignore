@@ -1,0 +1,13 @@
+**/node_modules
+**/__pycache__
+**/*.pyc
+.git
+.pytest_cache
+frontend/dist
+backend/.localdata
+backend/uploads
+ml/artifacts
+ml/data
+.reports
+tests
+*.csv

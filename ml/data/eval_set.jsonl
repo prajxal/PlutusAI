@@ -1,0 +1,134 @@
+{"message": "What if I raise the sourdough price by 10%?", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "what if we increase prices 5 percent", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "Suppose I discount the croissants 15%", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "if we cut prices by 8% what happens", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "what would a 12% price hike do to my margin", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "if I put the rate up by 10% what happens", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "what if sourdough sold for 250 instead of 220", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "thinking of charging 20 more per loaf", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "should I make the buns dearer by 10%", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "what if I raise all prices by 7%", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "would selling at 300 instead of 260 be better", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "suppose I drop the price of the masala bun 5%", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "planning a 10% markup on everything", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "what if I increase the croissant price 25 percent", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "if the loaf went to 280 from 240", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "is a 5 rupee increase on the bun worth it", "intent": "price_change", "metric": null, "variant": "english"}
+{"message": "suppose butter cost goes up 15%", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "what if my flour costs rise 10 percent", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "what if the supplier charges 8% more", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "what if flour gets 20% dearer", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "ingredients are going up 12% next month", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "what if butter becomes cheaper by 10%", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "suppose raw material rates climb 9%", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "what if my costs drop 5%", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "if we pay 15% more for packaging", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "what happens when sugar goes up 20 percent", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "my supplier wants 7% more from April", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "what if wheat became 30% more expensive", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "suppose I found a cheaper supplier and saved 10%", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "if input prices fell by 6 percent", "intent": "cost_change", "metric": null, "variant": "english"}
+{"message": "What if I make my own packaging?", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "should I bake my own bread instead of buying it", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "what if we brought the boxes in-house", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "should we produce the packaging ourselves", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "is it worth stopping the outsourcing", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "would manufacturing the cartons internally save money", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "what if I make our own jam instead of buying it", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "thinking of setting up my own line for the buns", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "make vs buy for the packaging", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "cheaper to do the icing in my own kitchen?", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "we currently buy the trays, should we build them", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "what would it take to stop buying the boxes from outside", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "is self production of the jam viable", "intent": "make_vs_buy", "metric": null, "variant": "english"}
+{"message": "show me my saved scenarios", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "what were my earlier what-ifs", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "show me my scenario history", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "what did I simulate last week", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "pull up the previous scenarios", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "list everything I have run so far", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "open my past what-ifs", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "my saved what-ifs please", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "can I see the simulations I kept", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "bring back that scenario from yesterday", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "what have I asked you before", "intent": "list_scenarios", "metric": null, "variant": "english"}
+{"message": "why did margin drop in May?", "intent": "insight", "metric": "margin", "variant": "english"}
+{"message": "what was my revenue last month", "intent": "insight", "metric": "revenue", "variant": "english"}
+{"message": "how many units did I sell in March", "intent": "insight", "metric": "units_sold", "variant": "english"}
+{"message": "what are my costs looking like", "intent": "insight", "metric": "cost", "variant": "english"}
+{"message": "why was March so bad", "intent": "insight", "metric": null, "variant": "english"}
+{"message": "show me my sales trend", "intent": "insight", "metric": "revenue", "variant": "english"}
+{"message": "which product makes me the most money", "intent": "insight", "metric": "revenue", "variant": "english"}
+{"message": "what is my gross margin", "intent": "insight", "metric": "margin", "variant": "english"}
+{"message": "is the bakery doing better than last quarter", "intent": "insight", "metric": null, "variant": "english"}
+{"message": "how much did I sell in December", "intent": "insight", "metric": "revenue", "variant": "english"}
+{"message": "what is my turnover this year", "intent": "insight", "metric": "revenue", "variant": "english"}
+{"message": "where am I losing money", "intent": "insight", "metric": null, "variant": "english"}
+{"message": "total units sold in April", "intent": "insight", "metric": "units_sold", "variant": "english"}
+{"message": "what did the croissants cost me", "intent": "insight", "metric": "cost", "variant": "english"}
+{"message": "how did February compare to January", "intent": "insight", "metric": null, "variant": "english"}
+{"message": "which month was my best", "intent": "insight", "metric": null, "variant": "english"}
+{"message": "how profitable is the masala bun", "intent": "insight", "metric": "margin", "variant": "english"}
+{"message": "break down my spending by product", "intent": "insight", "metric": "cost", "variant": "english"}
+{"message": "how many loaves went out last week", "intent": "insight", "metric": "units_sold", "variant": "english"}
+{"message": "give me the numbers for the croissant", "intent": "insight", "metric": null, "variant": "english"}
+{"message": "hello there", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "thanks!", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "who are you", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "can you help", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "what is the weather like", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "asdfgh", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "ok", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "tell me a joke", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "good morning", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "what can this thing do", "intent": "unclear", "metric": null, "variant": "english"}
+{"message": "agar main sourdough ka price 10% badha doon to?", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "kya ho agar rate 15% zyada kar doon", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "bun ka daam 5% kam kar doon to kya hoga", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "price 20 rupees badhane se kya farak padega", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "agar main 10 percent discount du to", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "sabka rate 8% upar kar dein to", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "croissant mehenga karun 12% se", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "अगर मैं दाम 10% बढ़ा दूँ तो", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "sasta bech doon to kya hoga 7% kam pe", "intent": "price_change", "metric": null, "variant": "hinglish"}
+{"message": "agar maida 20% mehenga ho jaye to", "intent": "cost_change", "metric": null, "variant": "hinglish"}
+{"message": "butter ka cost 10% badh gaya to kya hoga", "intent": "cost_change", "metric": null, "variant": "hinglish"}
+{"message": "supplier 12% zyada charge kare to", "intent": "cost_change", "metric": null, "variant": "hinglish"}
+{"message": "agar packaging ka kharcha 15% badh jaye", "intent": "cost_change", "metric": null, "variant": "hinglish"}
+{"message": "dudh sasta ho gaya 10% to margin pe kya asar", "intent": "cost_change", "metric": null, "variant": "hinglish"}
+{"message": "kaccha maal 9% mehenga hua to", "intent": "cost_change", "metric": null, "variant": "hinglish"}
+{"message": "अगर चीनी का दाम 20% बढ़े तो", "intent": "cost_change", "metric": null, "variant": "hinglish"}
+{"message": "lagat 5% kam ho jaye to profit kitna", "intent": "cost_change", "metric": null, "variant": "hinglish"}
+{"message": "agar main khud packaging banau to?", "intent": "make_vs_buy", "metric": null, "variant": "hinglish"}
+{"message": "bread khud bake karun ya kharidun", "intent": "make_vs_buy", "metric": null, "variant": "hinglish"}
+{"message": "in-house banane me faida hai kya", "intent": "make_vs_buy", "metric": null, "variant": "hinglish"}
+{"message": "apne hi kitchen me icing banana sasta padega kya", "intent": "make_vs_buy", "metric": null, "variant": "hinglish"}
+{"message": "bahar se mangane ki jagah khud banaye to", "intent": "make_vs_buy", "metric": null, "variant": "hinglish"}
+{"message": "dabba khud bana lein to kitna bachega", "intent": "make_vs_buy", "metric": null, "variant": "hinglish"}
+{"message": "क्या मैं खुद पैकेजिंग बनाऊँ", "intent": "make_vs_buy", "metric": null, "variant": "hinglish"}
+{"message": "outsourcing band karke khud karein", "intent": "make_vs_buy", "metric": null, "variant": "hinglish"}
+{"message": "mere purane scenarios dikhao", "intent": "list_scenarios", "metric": null, "variant": "hinglish"}
+{"message": "pehle jo what-if kiye the wo dikha do", "intent": "list_scenarios", "metric": null, "variant": "hinglish"}
+{"message": "saved scenarios dikhao", "intent": "list_scenarios", "metric": null, "variant": "hinglish"}
+{"message": "meri scenario history kholo", "intent": "list_scenarios", "metric": null, "variant": "hinglish"}
+{"message": "kal jo simulate kiya tha wo nikalo", "intent": "list_scenarios", "metric": null, "variant": "hinglish"}
+{"message": "पिछले सीनारियो दिखाओ", "intent": "list_scenarios", "metric": null, "variant": "hinglish"}
+{"message": "jo maine save kiya tha wo dikhao", "intent": "list_scenarios", "metric": null, "variant": "hinglish"}
+{"message": "March me margin kyun gira", "intent": "insight", "metric": "margin", "variant": "hinglish"}
+{"message": "pichle mahine ka revenue kitna tha", "intent": "insight", "metric": "revenue", "variant": "hinglish"}
+{"message": "kitne units beche the April me", "intent": "insight", "metric": "units_sold", "variant": "hinglish"}
+{"message": "sabse zyada paisa kis product se aaya", "intent": "insight", "metric": "revenue", "variant": "hinglish"}
+{"message": "मेरा मुनाफा कैसा चल रहा है", "intent": "insight", "metric": "margin", "variant": "hinglish"}
+{"message": "kharcha kitna hua is mahine", "intent": "insight", "metric": "cost", "variant": "hinglish"}
+{"message": "dhandha kaisa chal raha hai", "intent": "insight", "metric": null, "variant": "hinglish"}
+{"message": "kitni bikri hui December me", "intent": "insight", "metric": "revenue", "variant": "hinglish"}
+{"message": "sourdough ka margin batao", "intent": "insight", "metric": "margin", "variant": "hinglish"}
+{"message": "इस महीने कितने units बिके", "intent": "insight", "metric": "units_sold", "variant": "hinglish"}
+{"message": "kis mahine sabse acha tha", "intent": "insight", "metric": null, "variant": "hinglish"}
+{"message": "lagat kitni aa rahi hai bun pe", "intent": "insight", "metric": "cost", "variant": "hinglish"}
+{"message": "namaste", "intent": "unclear", "metric": null, "variant": "hinglish"}
+{"message": "theek hai", "intent": "unclear", "metric": null, "variant": "hinglish"}
+{"message": "kya kar sakte ho", "intent": "unclear", "metric": null, "variant": "hinglish"}
+{"message": "shukriya", "intent": "unclear", "metric": null, "variant": "hinglish"}
+{"message": "haan bhai", "intent": "unclear", "metric": null, "variant": "hinglish"}
+{"message": "नमस्ते कैसे हो", "intent": "unclear", "metric": null, "variant": "hinglish"}
